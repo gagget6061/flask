@@ -7,7 +7,7 @@ def index():
     return render_template('./index.html')
 
 @app.route("/products")
-def index():
+def products():
     return render_template('./products.html')
 
 #@app.route("/")
