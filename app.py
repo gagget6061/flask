@@ -8,11 +8,11 @@ def hello_world():
 
 @app.route("/")
 def index():
-    return send_from_directory('templates',"index.html")
+    return send_from_directory('html2',"index.html")
 
 @app.route('/<path:name>')
 def start(name):
-    return send_from_directory('templates',name)
+    return send_from_directory('html2',name)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True, port=5000)
